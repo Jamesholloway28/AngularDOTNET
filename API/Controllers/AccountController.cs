@@ -18,7 +18,7 @@ public class AccountController(DataContext context, ITokenService tokenService) 
 
         if (await UserExists(registerDto.Username)) return BadRequest("Username is taken");
         return Ok();
-        // using var hmac = new HMACSHA512();
+        // using var hmac = new HMACSHA512()
 
         // var user = new AppUser
         // {
@@ -63,3 +63,4 @@ public class AccountController(DataContext context, ITokenService tokenService) 
         return await context.Users.AnyAsync(x => x.UserName.ToLower() == username.ToLower()); // Bob != bob
     }
 }
+//test
