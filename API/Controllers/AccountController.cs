@@ -19,10 +19,7 @@ public class AccountController(DataContext context, ITokenService tokenService) 
         if (await UserExists(registerDto.Username)) return BadRequest("Username is taken");
         return Ok();
 <<<<<<< Updated upstream
-        // using var hmac = new HMACSHA512();;;;
-=======
         // using var hmac = new HMACSHA512();;
->>>>>>> Stashed changes
 
         // var user = new AppUser
         // {
@@ -31,7 +28,7 @@ public class AccountController(DataContext context, ITokenService tokenService) 
         //     PasswordSalt = hmac.Key
         // };
         // context.Users.Add(user);
-        // await context.SaveChangesAsync();
+        // await context.SaveChangesAsync();;
 
         // return new UserDto
         // {
