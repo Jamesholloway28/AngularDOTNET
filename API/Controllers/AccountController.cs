@@ -21,7 +21,7 @@ public class AccountController(DataContext context, ITokenService tokenService) 
 <<<<<<< Updated upstream
         // using var hmac = new HMACSHA512();;;;
 =======
-        // using var hmac = new HMACSHA512();;
+        // using var hmac = new HMACSHA512();;;
 >>>>>>> Stashed changes
 
         // var user = new AppUser
